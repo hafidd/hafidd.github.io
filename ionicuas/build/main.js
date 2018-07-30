@@ -63,15 +63,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var HomePage = /** @class */ (function () {
-    //private url = "http://192.168.43.65/ionicuas/web/wisata-api/";
+    //private url = "http://192.168.43.65/ionicuas/web/";
     function HomePage(navCtrl, http) {
         this.navCtrl = navCtrl;
         this.http = http;
         this.item = [];
         this.kabupatens = [];
         this.jenises = [];
-        //private url = "http://localhost:8080/wisata-api/";
-        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/api/";
+        //private url = "http://localhost:8080/";
+        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/";
         this.hideMe = false;
         this.arrow = "ios-arrow-down";
         this.jenis = "Semua Wisata";
@@ -85,7 +85,7 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.load = function () {
         var _this = this;
         this.http
-            .get(this.url + 'get-wisata?tipe=' + this.jenis + '&kab=' + this.kabupaten)
+            .get(this.url + 'api/get-wisata?tipe=' + this.jenis + '&kab=' + this.kabupaten)
             .subscribe(function (data) {
             //console.dir(data);
             _this.item = data;
@@ -98,7 +98,7 @@ var HomePage = /** @class */ (function () {
         var _this = this;
         // kabupaten
         this.http
-            .get(this.url + 'wisata-api/kabupaten')
+            .get(this.url + 'api/kabupaten')
             .subscribe(function (data) {
             //console.dir(data);
             _this.kabupatens = data;
@@ -107,7 +107,7 @@ var HomePage = /** @class */ (function () {
         });
         // jenis
         this.http
-            .get(this.url + 'wisata-api/jenis')
+            .get(this.url + 'api/jenis')
             .subscribe(function (data) {
             //console.dir(data);
             _this.jenises = data;

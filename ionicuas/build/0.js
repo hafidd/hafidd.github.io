@@ -65,14 +65,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var DetailPage = /** @class */ (function () {
-    //private url = "http://192.168.43.65/ionicuas/web/wisata-api/";
+    //private url = "http://192.168.43.65/ionicuas/web/";
     function DetailPage(navCtrl, http, navParams) {
         this.navCtrl = navCtrl;
         this.http = http;
         this.navParams = navParams;
         this.images = [];
-        //private url = "http://localhost:8080/wisata-api/";
-        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/api/";
+        //private url = "http://localhost:8080/";
+        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/";
     }
     DetailPage.prototype.ionViewDidLoad = function () {
         //console.log(this.navParams.get("record"));
@@ -125,7 +125,7 @@ var DetailPage = /** @class */ (function () {
     DetailPage.prototype.loadGallery = function () {
         var _this = this;
         this.http
-            .get(this.url + 'get-gallery?id=' + this.id)
+            .get(this.url + 'api/get-gallery?id=' + this.id)
             .subscribe(function (data) {
             console.dir(data);
             _this.images = data;
