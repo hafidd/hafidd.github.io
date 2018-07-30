@@ -71,7 +71,8 @@ var DetailPage = /** @class */ (function () {
         this.http = http;
         this.navParams = navParams;
         this.images = [];
-        this.url = "http://localhost:8080/";
+        //private url = "http://localhost:8080/";
+        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/";
     }
     DetailPage.prototype.ionViewDidLoad = function () {
         //console.log(this.navParams.get("record"));

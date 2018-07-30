@@ -70,7 +70,8 @@ var HomePage = /** @class */ (function () {
         this.item = [];
         this.kabupatens = [];
         this.jenises = [];
-        this.url = "http://localhost:8080/";
+        //private url = "http://localhost:8080/";
+        this.url = "https://webmobile99.000webhostapp.com/yiiweb/ionicuas/web/";
         this.hideMe = false;
         this.arrow = "ios-arrow-down";
         this.jenis = "Semua Wisata";
@@ -79,7 +80,6 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.ionViewWillEnter = function () {
         this.load();
         this.loadSelect();
-        console.dir(this.kabupatens);
     };
     // load data
     HomePage.prototype.load = function () {
@@ -125,12 +125,12 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"d:\prg\ionic\ionicuas\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Wisata Yogyakarta\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="assets/imgs/yogyakarta.jpeg" alt="yogya" class="imgr" />\n\n  <div>\n    <div>\n      <div text-center>\n        <h6>{{jenis}} di {{kabupaten}}\n          <button ion-button small (click)="hideFilter()">\n            <ion-icon name="{{arrow}}"></ion-icon>\n          </button>\n        </h6>\n      </div>\n      <div *ngIf="hideMe">\n        <ion-row>\n          <ion-col col-12 col-md-4>\n            <ion-item>\n              <ion-label>Kabupaten</ion-label>\n              <ion-select [(ngModel)]="kabupaten">\n                <ion-option value="Semua Kabupaten">Semua Kabupaten</ion-option>\n                <ion-option *ngFor="let kab of kabupatens" value="{{kab.kab_nama}}">{{kab.kab_nama}}</ion-option>\n              </ion-select>\n            </ion-item>\n          </ion-col>\n          <ion-col col-12 col-md-4>\n            <ion-item>\n              <ion-label>Kategori</ion-label>\n              <ion-select [(ngModel)]="jenis">\n                <ion-option value="Semua Wisata">Semua Wisata</ion-option>\n                <ion-option *ngFor="let jns of jenises" value="{{jns.jenis_nama}}">{{jns.jenis_nama}}</ion-option>\n              </ion-select>\n            </ion-item>\n          </ion-col>\n          <ion-col col-12 col-md-1>\n            <button ion-button full (click)="load()">\n              <ion-icon name="search"></ion-icon>\n            </button>\n          </ion-col>\n        </ion-row>\n      </div>\n    </div>\n    <ion-grid>\n      <ion-row>\n        <ion-col col-12 col-md-4 col-lg-3 col-xl-3 *ngFor="let itemData of item">\n          <ion-card>\n            <ion-card-header>\n              <b>{{ itemData.wis_nama }}</b>\n            </ion-card-header>\n            <ion-card-content no-padding>\n              <div (click)="goDetail({record: itemData})" class="img-list">\n                <img src="{{url}}gambar/wisata/{{ itemData.wis_id }}.{{ itemData.wis_gambar }}" alt="{{itemData.wis_nama}}" />\n              </div>\n            </ion-card-content>\n            <ion-row class="cardfooter">\n              <ion-col>\n                <b>\n                  <ion-icon name="md-images"></ion-icon> {{itemData.photos}}\n                </b>\n              </ion-col>\n            </ion-row>\n          </ion-card>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n  </div>\n</ion-content>'/*ion-inline-end:"d:\prg\ionic\ionicuas\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\prg\ionic\ionicuas\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Wisata Yogyakarta\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="assets/imgs/yogyakarta.jpeg" alt="yogya" class="imgr" />\n\n  <div>\n    <div>\n      <div text-center>\n        <h6>{{jenis}} di {{kabupaten}}\n          <button ion-button small (click)="hideFilter()">\n            <ion-icon name="{{arrow}}"></ion-icon>\n          </button>\n        </h6>\n      </div>\n      <div *ngIf="hideMe">\n        <ion-row>\n          <ion-col col-12 col-md-4>\n            <ion-item>\n              <ion-label>Kabupaten</ion-label>\n              <ion-select [(ngModel)]="kabupaten">\n                <ion-option value="Semua Kabupaten">Semua Kabupaten</ion-option>\n                <ion-option *ngFor="let kab of kabupatens" value="{{kab.kab_nama}}">{{kab.kab_nama}}</ion-option>\n              </ion-select>\n            </ion-item>\n          </ion-col>\n          <ion-col col-12 col-md-4>\n            <ion-item>\n              <ion-label>Kategori</ion-label>\n              <ion-select [(ngModel)]="jenis">\n                <ion-option value="Semua Wisata">Semua Wisata</ion-option>\n                <ion-option *ngFor="let jns of jenises" value="{{jns.jenis_nama}}">{{jns.jenis_nama}}</ion-option>\n              </ion-select>\n            </ion-item>\n          </ion-col>\n          <ion-col col-12 col-md-1>\n            <button ion-button full (click)="load()">\n              <ion-icon name="search"></ion-icon>\n            </button>\n          </ion-col>\n        </ion-row>\n      </div>\n    </div>\n    <ion-grid>\n      <ion-row>\n        <ion-col col-12 col-md-4 col-lg-3 col-xl-3 *ngFor="let itemData of item">\n          <ion-card>\n            <ion-card-header>\n              <b>{{ itemData.wis_nama }}</b>\n            </ion-card-header>\n            <ion-card-content no-padding>\n              <div (click)="goDetail({record: itemData})" class="img-list">\n                <img src="{{url}}gambar/wisata/{{ itemData.wis_id }}.{{ itemData.wis_gambar }}" alt="{{itemData.wis_nama}}" />\n              </div>\n            </ion-card-content>\n            <ion-row class="cardfooter">\n              <ion-col>\n                <b>\n                  <ion-icon name="md-images"></ion-icon> {{itemData.photos}}\n                </b>\n              </ion-col>\n            </ion-row>\n          </ion-card>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n  </div>\n</ion-content>'/*ion-inline-end:"D:\prg\ionic\ionicuas\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -250,11 +250,12 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"d:\prg\ionic\ionicuas\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"d:\prg\ionic\ionicuas\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\prg\ionic\ionicuas\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"D:\prg\ionic\ionicuas\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
