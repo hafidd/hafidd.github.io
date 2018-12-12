@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{472:function(n,t,e){"use strict";e.r(t),e.d(t,"default",function(){return b});var a=e(85),c=e(86),r=e(89),u=e(87),i=e(88),o=e(1),s=e.n(o),b=function(n){function t(){return Object(a.a)(this,t),Object(r.a)(this,Object(u.a)(t).apply(this,arguments))}return Object(i.a)(t,n),Object(c.a)(t,[{key:"render",value:function(){return s.a.createElement("div",null,"tambah mahasiswa")}}]),t}(o.Component)}}]);
+//# sourceMappingURL=18.91fe12ff.chunk.js.map
