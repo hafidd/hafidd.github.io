@@ -1,0 +1,108 @@
+[
+    {
+        "_id": "2",
+        "name": "Kanban Board",
+        "desc": "Trello clone built with MERN + Socket.IO",
+        "tags": [
+            "js",
+            "node",
+            "express",
+            "react",
+            "mongo",
+            "sio"
+        ],
+        "image": "/img/mern-kanboard/mk2c.png",
+        "images": [
+            "/img/mern-kanboard/mk1.png",
+            "/img/mern-kanboard/mk2.png",
+            "/img/mern-kanboard/mk3.png",
+            "/img/mern-kanboard/mk4.png"
+        ],
+        "link": {
+            "demo": "https://trelloclone-mern.herokuapp.com",
+            "github": "https://github.com/hafidd/mern-kanboard"
+        }
+    },
+    {
+        "_id": "3",
+        "name": "Media Server",
+        "desc": "Simple media server app",
+        "tags": [
+            "js",
+            "express",
+            "react",
+            "tailwind"
+        ],
+        "image": "/img/media-server/ms4c.png",
+        "images": [
+            "/img/media-server/ms1.png",
+            "/img/media-server/ms2.png",
+            "/img/media-server/ms3.png",
+            "/img/media-server/ms4.png",
+            "/img/media-server/ms5.png",
+            "/img/media-server/ms6.png",
+            "/img/media-server/ms7.png",
+            "/img/media-server/ms8.png",
+            "/img/media-server/ms9.png"
+        ],
+        "link": {
+            "demo": false,
+            "github": "https://github.com/hafidd/simple-media-server"
+        }
+    },
+    {
+        "_id": "1",
+        "name": "Simple Chat",
+        "desc": "Realtime chat built with MERN + Socket.IO",
+        "tags": [
+            "js",
+            "node",
+            "express",
+            "react",
+            "mongo",
+            "sio",
+            "bootstrap"
+        ],
+        "image": "/img/mern-chat/mc2c.png",
+        "images": [
+            "/img/mern-chat/mc1.png",
+            "/img/mern-chat/mc2.png",
+            "/img/mern-chat/mc3.png",
+            "/img/mern-chat/mc4.png",
+            "/img/mern-chat/mc5.png"
+        ],
+        "link": {
+            "demo": "https://simplechat-mern.herokuapp.com/",
+            "github": "https://github.com/hafidd/mern-chat"
+        }
+    },
+    {
+        "_id": "4",
+        "name": "E-Learning",
+        "desc": "E-Learning app built with Laravel and ReactJS",
+        "tags": [
+            "php",
+            "laravel",
+            "react",
+            "sql",
+            "bootstrap"
+        ],
+        "image": "/img/reavelearning/el9c.png",
+        "images": [
+            "/img/reavelearning/el1.png",
+            "/img/reavelearning/el2.png",
+            "/img/reavelearning/el3.png",
+            "/img/reavelearning/el4.png",
+            "/img/reavelearning/el5.png",
+            "/img/reavelearning/el6.png",
+            "/img/reavelearning/el7.png",
+            "/img/reavelearning/el8.png",
+            "/img/reavelearning/el9.png",
+            "/img/reavelearning/el10.png"
+        ],
+        "link": {
+            "demo": "https://reavelearning.herokuapp.com/",
+            "github": "https://github.com/hafidd/reavelearning"
+        }
+    }
+]
