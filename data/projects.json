@@ -19,7 +19,7 @@
             "/img/mern-kanboard/mk4.png"
         ],
         "link": {
-            "demo": "https://trelloclone-mern.herokuapp.com",
+            "demo": "https://mern-kanboard.herokuapp.com/",
             "github": "https://github.com/hafidd/mern-kanboard"
         }
     },
